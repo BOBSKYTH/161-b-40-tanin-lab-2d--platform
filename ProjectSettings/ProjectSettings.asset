@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: e4bdbe3d68a36c1408ff73ed50076b5f
+  productGUID: 9ed02cb932c4a3d499ad8e0fbe6ae491
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: My project (2d)
+  productName: 2D
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -823,14 +823,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: My project (2d)
+  metroPackageName: 2D
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: My project (2d)
+  metroApplicationDescription: 2D
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -901,10 +901,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: a236a7ad-f503-4f62-b977-d74e60a934b0
+  cloudProjectId: 710a29fa-d187-4d03-a471-041046cf02f5
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project (2d)
+  projectName: 2D
   organizationId: sroytaninwongsatum27
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
