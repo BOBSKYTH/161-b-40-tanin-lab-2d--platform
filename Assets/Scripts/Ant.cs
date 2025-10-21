@@ -1,6 +1,4 @@
-﻿
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Ant : Enemy
 {
@@ -10,8 +8,8 @@ public class Ant : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        base.Intialize(30);
- 
+        base.Initialize(30);
+
         DamagHit = 20;
         veloity = new Vector2(-1.0f, 0.0f);
 
@@ -43,6 +41,7 @@ public class Ant : Enemy
     private void FixedUpdate()
     {
         Behavior();
+        //Debug.Log("FixedUpdate: " + Time.fixedDeltaTime);
     }
 
    
@@ -50,6 +49,6 @@ public class Ant : Enemy
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(Time.deltaTime);
     }
 }

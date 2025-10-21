@@ -1,15 +1,27 @@
 using UnityEngine;
 
-public class Player : Enemy
+public class Player : Character
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        base.Intialize(100);
+        base.Initialize(100);
+        
     }
-    public override void Behavior()
+
+    public void OnHitWith(Enemy enemy)
     {
-        throw new System.NotImplementedException();
+        TakDamage(enemy.DamagHit);
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+       Enemy enemy = other.gameObject.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            OnHitWith(enemy);
+        }
+
+
     }
 
     // Update is called once per frame

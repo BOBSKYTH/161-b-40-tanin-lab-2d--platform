@@ -6,11 +6,11 @@ public class Croccodile : Enemy
     public Player player; //target to atk
     void Start()
     {
-        base.Intialize(50);
+        base.Initialize(50);
         DamagHit = 30;
-        //set atk range and target
         atkRange = 6.0f;
         player = GameObject.FindFirstObjectByType<Player>();
+        
     }
 
     private void FixedUpdate()
