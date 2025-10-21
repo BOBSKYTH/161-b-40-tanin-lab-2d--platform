@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class Enemy : Character
 {
+    public int DamagHit { get; protected set; }
+
+
+    
+    public abstract void Bahvior();
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

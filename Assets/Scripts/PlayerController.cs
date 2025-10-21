@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿Susing UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {

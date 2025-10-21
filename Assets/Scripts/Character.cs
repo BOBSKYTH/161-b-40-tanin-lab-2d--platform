@@ -14,6 +14,15 @@ public class Character : MonoBehaviour
     protected Rigidbody2D rb;
 
 
+    public void Intialize(int starHealth)
+    {
+        Health = starHealth;
+        Debug.Log($"{this.name} is intialize Health : {this.Health}");
+
+        rb = GetComponent<Rigidbody2D> ();
+        anim = GetComponent<Animator>();
+    }
+
     public void TakDamage (int damage)
     {
         Health -= damage;
