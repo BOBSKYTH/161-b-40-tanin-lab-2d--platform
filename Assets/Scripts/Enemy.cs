@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy : Character
+public abstract class Enemy : Character
 {
     public int DamagHit { get; protected set; }
 

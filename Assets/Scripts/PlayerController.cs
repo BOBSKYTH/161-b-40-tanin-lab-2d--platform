@@ -1,10 +1,10 @@
-﻿Susing UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
 
-	public float maxSpeed = 10f;
+    public float maxSpeed = 10f;
 	bool facingRight = true;
 
 	Rigidbody2D r2d;
