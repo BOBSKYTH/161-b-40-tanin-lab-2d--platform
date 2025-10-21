@@ -1,7 +1,8 @@
 ﻿Susing UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
 	public float maxSpeed = 10f;
 	bool facingRight = true;
@@ -16,8 +17,9 @@ public class PlayerController : MonoBehaviour {
 	public float jumpForce = 700.0f;
 
 	// Use this for initialization
-	void Start () {
-		r2d = GetComponent<Rigidbody2D>	();
+	void Start ()
+    {
+		r2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 	}
 	

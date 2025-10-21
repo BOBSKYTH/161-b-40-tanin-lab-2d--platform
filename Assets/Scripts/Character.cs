@@ -19,7 +19,7 @@ public class Character : MonoBehaviour
         Health = starHealth;
         Debug.Log($"{this.name} is intialize Health : {this.Health}");
 
-        rb = GetComponent<Rigidbody2D> ();
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
