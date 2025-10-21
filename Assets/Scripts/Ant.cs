@@ -17,7 +17,7 @@ public class Ant : Enemy
 
     }
 
-    public override void Bahvior()
+    public override void Behavior()
     {
         rb.MovePosition(rb.position + veloity * Time.fixedDeltaTime);
         //move left และเกินขอบซ้าย
@@ -42,13 +42,10 @@ public class Ant : Enemy
     }
     private void FixedUpdate()
     {
-        Behaviour();
+        Behavior();
     }
 
-    private void Behaviour()
-    {
-        throw new NotImplementedException();
-    }
+   
 
     // Update is called once per frame
     void Update()

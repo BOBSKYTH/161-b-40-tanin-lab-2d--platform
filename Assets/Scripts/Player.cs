@@ -7,7 +7,7 @@ public class Player : Enemy
     {
         base.Intialize(100);
     }
-    public override void Bahvior()
+    public override void Behavior()
     {
         throw new System.NotImplementedException();
     }
