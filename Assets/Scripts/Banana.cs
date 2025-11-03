@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Banana : Weapon
@@ -11,19 +10,21 @@ public class Banana : Weapon
         Vector2 newPosition = new Vector2(newX, newY);
         transform.position = newPosition;
     }
-
     public override void OnHitwith(Character character)
     {
         if (character is Enemy)
-            character.TakDamage(this.damage);
+        {
+            character.TakeDamage(this.damge);
+        }
     }
-    
- 
+  
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         speed = 4.0f * GetShootDirection();
-        damage = 30;
+        damge = 30;
 
     }
     private void FixedUpdate()
@@ -37,8 +38,7 @@ public class Banana : Weapon
         
     }
 
-    internal void Instantiate(int v, Player player)
-    {
-        throw new NotImplementedException();
-    }
+    
+
+ 
 }

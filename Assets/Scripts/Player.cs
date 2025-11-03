@@ -19,10 +19,14 @@ public class Player : Character, IShootable
     {
         WaitTime += Time.fixedDeltaTime;
     }
-    public void OnHitWith(Enemy enemy)
+    
+
+    void Update()
     {
-        TakDamage(enemy.DamagHit);
+        Shoot();
     }
+
+
     private void OnCollisionEnter2D(Collision2D other)
     {
        Enemy enemy = other.gameObject.GetComponent<Enemy>();
@@ -33,23 +37,32 @@ public class Player : Character, IShootable
 
 
     }
-
-    // Update is called once per frame
-    private  void Update()
+    public void OnHitWith(Enemy enemy)
     {
-        Shoot();
+        TakDamage(enemy.DamagHit);
     }
+
+
 
     public void Shoot()
     {
         if (Input.GetButtonDown("Fire1") && WaitTime >= ReloadTime)
         {
-            var bullet = Instantiate(Bullet, ShootPoint.position,Quaternion.identity );
+            var bullet = Instantiate(Bullet, ShootPoint.position, Quaternion.identity);
             Banana banana = bullet.GetComponent<Banana>();
-            if (bullet != null) 
-                banana.Instantiate(20, this);
+            if (banana != null)
+                banana.InitWeapon(20, this);
             WaitTime = 0.0f;
         }
         
     }
 }
+
+
+
+
+
+
+
+
+

@@ -2,16 +2,15 @@ using UnityEngine;
 
 public abstract class Weapon : MonoBehaviour
 {
-    public int damage;
-    public IShootable Shooter;
-
+    public int damge;
+    public IShootable Shootable;
     public abstract void Move();
 
     public abstract void OnHitwith(Character character);
 
     public int GetShootDirection()
     {
-        float value = Shooter.ShootPoint.position.x - Shooter.ShootPoint.position.x;
+        float value = Shootable.ShootPoint.position.x - Shootable.ShootPoint.parent.position.x;
 
         if (value > 0) 
             return 1;
@@ -26,7 +25,11 @@ public abstract class Weapon : MonoBehaviour
             Destroy(this.gameObject, 5f);
         }
     }
-
+    public void InitWeapon(int newDamage, IShootable newShooter)
+    {
+        damge = newDamage;
+        Shootable = newShooter;
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

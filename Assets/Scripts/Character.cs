@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Character : MonoBehaviour
@@ -51,5 +52,13 @@ public class Character : MonoBehaviour
     void Update()
     {
         
+    }
+
+    internal void TakeDamage(int damage)
+    {
+        Health -= damage;
+        Debug.Log($"{this.name} took damage {damage}Current Health: {Health}");
+
+        IsDead();
     }
 }
