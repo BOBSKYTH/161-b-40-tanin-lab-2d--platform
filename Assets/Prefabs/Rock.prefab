@@ -179,5 +179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rock
   damge: 0
+  speed: 5
   rb: {fileID: 5076126}
   force: {x: 0, y: 0}

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Rock : Weapon
 {
+    
     public Rigidbody2D rb;
     public Vector2 force;
 
