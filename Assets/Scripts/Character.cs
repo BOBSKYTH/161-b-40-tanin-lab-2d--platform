@@ -1,16 +1,17 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-
+    [field: SerializeField] public Slider Hp;
     private int health;
     public int Health
     {
         get { return health; }
         set { health = (value < 0) ? 0 : value; }
     }
-
+    
     protected Animator anim;
     protected Rigidbody2D rb;
 

@@ -8,8 +8,8 @@ public class Ant : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Hp.maxValue = 30;
         base.Initialize(30);
-
         DamagHit = 20;
         veloity = new Vector2(-1.0f, 0.0f);
 
@@ -41,7 +41,8 @@ public class Ant : Enemy
     private void FixedUpdate()
     {
         Behavior();
-        //Debug.Log("FixedUpdate: " + Time.fixedDeltaTime);
+        Hp.value = Health;
+        
     }
 
    

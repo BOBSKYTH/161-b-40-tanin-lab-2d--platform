@@ -4,12 +4,13 @@ public class Player : Character, IShootable
 {
     [field: SerializeField]public GameObject Bullet { get; set; }
     [field: SerializeField]public Transform ShootPoint { get; set; }
-    [field: SerializeField] public float ReloadTime { get ; set ; }
-    [field: SerializeField] public float WaitTime { get ; set ; }
+    public float ReloadTime { get ; set ; }
+    public float WaitTime { get ; set ; }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Hp.maxValue = 100;
         base.Initialize(100);
         ReloadTime = 1.0f;
         WaitTime = 0.0f;
@@ -24,6 +25,7 @@ public class Player : Character, IShootable
     void Update()
     {
         Shoot();
+        Hp.value = Health;
     }
 
 

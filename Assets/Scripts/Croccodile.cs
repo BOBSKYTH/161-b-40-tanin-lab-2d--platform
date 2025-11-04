@@ -12,6 +12,7 @@ public class Croccodile : Enemy, IShootable
 
     void Start()
     {
+        Hp.maxValue = 50;
         base.Initialize(50);
         DamagHit = 30;
         atkRange = 6.0f;
@@ -22,8 +23,10 @@ public class Croccodile : Enemy, IShootable
 
     private void FixedUpdate()
     {
+        
         WaitTime += Time.fixedDeltaTime;
         Behavior();
+        Hp.value = Health;
     }
     public override void Behavior()
     {
